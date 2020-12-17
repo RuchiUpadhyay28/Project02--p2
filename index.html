@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="QuizTwo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h5 class="welcomeMsg">
+            ******************************************************<br>
+            <b>Welcome to the Bollywood Quiz!!</b><br>
+            ******************************************************<br>
+            <label for="userName"></label><b>Enter your name:</b> 
+            <input type="text" id="userName">
+            <button type="submit" class="submit">Submit</button>
+            <br><br>
+       </h5>
+       <h5>
+        <p class="msg d-none">
+            Hello <span id="name"></span>!! Let's begin the game.
+        </p>
+       </h5>
+    </div>
+
+   <section class="quiz d-none">
+       <h6>
+           <p class='mb-8 px-10'>
+               Can you guess the bollywood movies based on the described plots?? Let's check...
+           </p>
+           <ol>
+               <li>
+                   <p>
+                       Two youngsters from Delhi start a wedding planning enterprise. Everything is well until they fall in love with each other<br><br>
+                       <label for="answerOne"></label>
+                       <input type='radio' id="answerOne" name="answerOne" value="bbb">&nbsp;Band Baaja Baaraat<br>
+                       <label for="answerOne"></label>
+                       <input type='radio' id="answerOne" name="answerOne" value="jbj">&nbsp;Jhoom Barabar Jhoom<br>
+                       <label for="answerOne"></label>
+                       <input type='radio' id="answerOne" name="answerOne" value="kank">&nbsp;Kabhi Alvida Naa Kehna<br>
+                       <label for="answerOne"></label>
+                       <input type='radio' id="answerOne" name="answerOne" value="kkhh">&nbsp;Kuch Kuch Hota Hai<br><br>
+                       <button type="submit" class="btn btn-success" id="One">Check</button>
+                       <b class="correctAns correctAnsOne d-none">Correct Answer!!</b>
+                       <b class="wrongAns wrongAnsOne d-none">Wrong Answer!!</b>
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       A family is forced to relocate to Pakistan. A young man who smugges illegal weapons and people over the borders between India and Pakistan helps them.
+                       He falls in love with a girl in the family<br><br>
+                       <label for="answerTwo"></label>
+                       <input type='radio' id="answerTwo" name="answerTwo" value="mi">&nbsp;Mother India<br>
+                       <label for="answerTwo"></label>
+                       <input type='radio' id="answerTwo" name="answerTwo" value="rfg">&nbsp;Refugee<br>
+                       <label for="answerTwo"></label>
+                       <input type='radio' id="answerTwo" name="answerTwo" value="khn">&nbsp;Kahaani<br>
+                       <label for="answerTwo"></label>
+                       <input type='radio' id="answerTwo" name="answerTwo" value="akh">&nbsp;Ankhen<br><br>
+                       <button type="submit" class="btn btn-success" id="Two">Check</button>
+                       <b class="correctAns correctAnsTwo d-none">Correct Answer!!</b>
+                       <b class="wrongAns wrongAnsTwo d-none">Wrong Answer!!</b>
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       A simple man falls for a beautiful young girl and they get married. In order to impress her,he undergoes a complete makeover.<br><br>
+                       <label for="answerThree"></label>
+                       <input type='radio' id="answerThree" name="answerThree" value="ddd">&nbsp;Dil Dhadakne Do<br>
+                       <label for="answerThree"></label>
+                       <input type='radio' id="answerThree" name="answerThree" value="slt">&nbsp;Sultan<br>
+                       <label for="answerThree"></label>
+                       <input type='radio' id="answerThree" name="answerThree" value="rnbdj">&nbsp;Rab ne Banaa di Jodi<br>
+                       <label for="answerThree"></label>
+                       <input type='radio' id="answerThree" name="answerThree" value="nkp">&nbsp;Nadiya ke Paar<br><br>
+                       <button type="submit" class="btn btn-success" id="Three">Check</button>
+                       <b class="correctAns correctAnsThree  d-none">Correct Answer!!</b>
+                       <b class="wrongAns wrongAnsThree d-none">Wrong Answer!!</b>
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       A young man wants to live a peaceful life and despises his father's criminal activities.
+                       However, tragic cicumstances lead him to join the life of crime.<br><br>
+                       <label for="answerFour"></label>
+                       <input type='radio' id="answerFour" name="answerFour" value="phk">&nbsp;Phool aur Kaante<br>
+                       <label for="answerFour"></label>
+                       <input type='radio' id="answerFour" name="answerFour" value="phk">&nbsp;Vicky Donor<br>
+                       <label for="answerFour"></label>
+                       <input type='radio' id="answerFour" name="answerFour" value="shv">&nbsp;Shivaay<br>
+                       <label for="answerFour"></label>
+                       <input type='radio' id="answerFour" name="answerFour" value="aj">&nbsp;Action Jackson<br><br>
+                       <button type="submit" class="btn btn-success" id="Four">Check</button>
+                       <b class="correctAns correctAnsFour d-none">Correct Answer!!</b>
+                       <b class="wrongAns wrongAnsFour d-none">Wrong Answer!!</b>
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       A girl and a boy love each other but the boy is mysteriously killed. The girl moves to New Zealand to cope up with her loss where
+                       she meets the lookalike of her ex-lover. They then trace the boy's killer.<br><br>
+                       <label for="answerFive"></label>
+                       <input type="radio" id="answerFive" name="answerFive" value="kkgg">&nbsp;Kabhi Khushi Kabhi Gham<br>
+                       <label for="answerFive"></label>
+                       <input type="radio" id="answerFive" name="answerFive" value="khnh">&nbsp;Kal Ho Naa Ho<br>
+                       <label for="answerFive"></label>
+                       <input type="radio" id="answerFive" name="answerFive" value="dch">&nbsp;Dil Chahta Hai<br>
+                       <label for="answerFive"></label>
+                       <input type="radio" id="answerFive" name="answerFive" value="knph">&nbsp;Kaho Naa Pyaar Hai<br><br>
+                       <button type="submit" class="btn btn-success"id ="Five">Check</button>
+                       <b class="correctAns correctAnsFive d-none">Correct Answer!!</b>
+                       <b class="wrongAns wrongAnsFive d-none">Wrong Answer!!</b>
+                   </p>
+               </li>
+           </ol>
+           <button type="submit" class="btn btn-primary btn-md float-right mx-5 result">View Result</button>
+       </h6>
+       
+   </section>
+   <section class="container result-container d-none">
+       <div class="result-box">
+           <b>Congratulations! Your Final Score is: <span id="score"></span>
+           <br><br>
+           **********************************************************<br>
+           Hope you enjoyed! Thank You !!<br>
+           **********************************************************</b>
+           <br><br>
+       </div>
+   </section>
+</body>
+<script type="text/javascript" src="QuizTwo.js"></script>
+
+</html>

@@ -1,0 +1,36 @@
+h5{
+    color:rgb(204, 89, 44);
+    text-align: center;
+}
+
+h6{
+    margin-left: 50px;
+}
+
+.correctAns{
+    color: rgb(43, 85, 9);
+}
+
+.wrongAns{
+    color: rgb(243, 49, 49);
+}
+
+.result-container{
+    position: absolute;
+    border: 2px solid black;
+    box-shadow: 5px 8px #888888;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px;
+    padding: 5px;
+  
+}
+
+.result-box{
+    background: url('Congrats.gif');
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
